@@ -1,0 +1,43 @@
+{
+  "application": "TAISIA 0.3",
+  "model": "pure analytic one-mode quantum state",
+  "input": {
+    "kind": "q-deformed coherent (symmetric q)",
+    "n": 1,
+    "n0": 0,
+    "n1": 1,
+    "ratio": 1.0,
+    "phase": 0.0,
+    "q0": 3.4,
+    "p0": 1.2,
+    "a": 1.0,
+    "b": 0.0,
+    "m": 1,
+    "kerr": 0.8,
+    "deformation": 0.8
+  },
+  "method": "direct Manko integral w -> s(t)",
+  "hbar": 1,
+  "commutator": "[q,p]=i",
+  "complex_signal": "direct optical tomogram inversion s(t); units from T; phase fixed at reference",
+  "audio_mode": "Carrier (mono)",
+  "carrier_hz": 390,
+  "sample_rate_hz": 48000,
+  "duration_seconds": 3.2,
+  "T_seconds": 0.007,
+  "captured_envelope_L2_energy": 0.9999999008918665,
+  "peak_after_normalization": 0.6,
+  "audio_rms": 0.06662613941709715,
+  "gain_setting": 0.6,
+  "repeat_pulses_presentation_only": true,
+  "pulse_period_seconds": 0.41,
+  "captured_energy_meaning": "L2 of one packet",
+  "audio_processing": "common peak normalization, 5 ms end fades, PCM16 quantization; pulse repetition if selected; not unitary",
+  "global_phase": "fixed at tomographic reference time for direct method; otherwise at peak sample",
+  "stereo_iq_note": "L=Re(s), R=Im(s) before common normalization; phase convention needed for reproducibility",
+  "reconstruction_diagnostics": {
+    "fidelity_to_analytic_reference": 0.9999999999999996,
+    "relative_density_squared_error": 1.7707978645197927e-26,
+    "reference_density_error": 9.260467411210884e-14
+  }
+}
